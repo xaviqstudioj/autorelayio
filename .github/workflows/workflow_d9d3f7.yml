@@ -1,0 +1,12 @@
+name: CI Build
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  execute-stage:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build project
+        run: echo "ready"
